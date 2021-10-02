@@ -25,12 +25,12 @@ public class Server {
                         s = ss.accept();
     
                         System.out.println("New client request received : " + s);
-    
+                        //add new input here
                         final DataInputStream dis = new DataInputStream(s.getInputStream());
                         final DataOutputStream dos = new DataOutputStream(s.getOutputStream());
     
                         System.out.println("Creating a new handler for this client...");
-    
+                        //output invalid
                         if(i==0){
                             client = "server";
                         }else{
